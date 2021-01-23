@@ -1,0 +1,4 @@
+/cc/
+*.class
+
+/build/pclasses/cc/openhome
