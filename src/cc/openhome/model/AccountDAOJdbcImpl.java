@@ -28,8 +28,8 @@ public class AccountDAOJdbcImpl implements AccountDAO {
             stmt.setString(2, acct.getEmail());
             stmt.setString(3, acct.getPassword());
             stmt.setString(4, acct.getSalt());
-            stmt.setInt(5, acct.getBudget());				//去Account.java 加入budget屬性
-//            System.out.println("---------------"+acct.getBudget());
+            stmt.setInt(5, acct.getBudget());
+
             stmt.executeUpdate();
             
             stmt2.setString(1, acct.getName());

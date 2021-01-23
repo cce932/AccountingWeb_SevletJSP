@@ -11,7 +11,7 @@
     <div class="content">
         <h1>${param.username} 成功送出申請表單</h1>
         請至填寫之信箱 ${param.email} 查看申請結果。<br><br>
-        <a href='/gossip'>回首頁</a>
+        <a class='hre' href='/Accounting' style="text-decoration: none; color: #77AAAD;">回首頁</a>
     </div>
 </body>
 

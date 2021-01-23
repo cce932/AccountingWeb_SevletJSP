@@ -11,9 +11,8 @@
 <body class="root">
     <div class="content">
         <h1>${param.name} 密碼重設成功</h1>
-        <a href='/gossip'>回首頁</a>
+        <a href='/Accounting' style="text-decoration: none; color: #77AAAD;">回首頁</a>
     </div>
-
 </body>
 
 </html>

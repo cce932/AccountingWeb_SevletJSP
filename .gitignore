@@ -1,4 +1,3 @@
-/cc/
+/build/
 *.class
-
-/build/pclasses/cc/openhome
+settings.json

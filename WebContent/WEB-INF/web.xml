@@ -31,11 +31,11 @@
   </login-config>
   <context-param>
     <param-name>MAIL_USER</param-name>
-    <param-value>input my mailAdress</param-value>
+    <param-value>YOUR_MAIL_ADDRESS</param-value>
   </context-param>
   <context-param>
     <param-name>MAIL_PASSWORD</param-name>
-    <param-value>input my pwd</param-value>
+    <param-value>YOUR_MAIL_PASSWORD</param-value>
   </context-param>
   <error-page>
     <error-code>403</error-code>

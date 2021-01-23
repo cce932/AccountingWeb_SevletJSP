@@ -10,19 +10,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(
-    urlPatterns={"/logout"}, 
-    initParams={
-        @WebInitParam(name = "LOGIN_PATH", value = "/gossip")
-    }
-)
-@ServletSecurity(
-    @HttpConstraint(rolesAllowed = {"member"})
-)
+@WebServlet(urlPatterns = { "/logout" }, initParams = { @WebInitParam(name = "LOGIN_PATH", value = "/Accounting") })
+@ServletSecurity(@HttpConstraint(rolesAllowed = { "member" }))
 public class Logout extends HttpServlet {
-    protected void doGet(
-            HttpServletRequest request, HttpServletResponse response) 
-                          throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         request.logout();
         request.getSession().invalidate();
         response.sendRedirect(getInitParameter("LOGIN_PATH"));

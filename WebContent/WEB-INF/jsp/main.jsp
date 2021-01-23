@@ -1,4 +1,4 @@
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <!DOCTYPE html>
     <html>
 
@@ -10,11 +10,15 @@
 
     <body class="root">
         <div class="content">
-            <b><h1>Accounting</h1></b><br>
+            <b>
+                <h1>Accounting</h1>
+            </b><br>
 
             <div class="func">
-                <a href='logout'>登出 ${sessionScope.login}</a><br>
+                <a class='hre' href='logout' style="text-decoration: none; color: #77AAAD;">登出 ${sessionScope.login}</a>
+                <br>
                 <a href='new_add_record'><button id="Check1">新增紀錄</button></a>
+                <a href='browse_record'><button id="Check1">瀏覽紀錄</button></a>
             </div>
             <hr>
             <c:choose>
@@ -27,18 +31,16 @@
             </c:choose>
 
             <p>
-                <div>
-                    今日餘額：${todayAmount}
-                    <br> 現金總餘額：${allCash}
-                    <br> 銀行總餘額：${allDeposit}
-                    <br> 總餘額：${allAmount}
-                </div>
-                <p>
+            <div>
+                今日餘額：${todayAmount}
+                <br> 現金總餘額：${allCash}
+                <br> 銀行總餘額：${allDeposit}
+                <br> 總餘額：${allAmount}
+            </div>
+            <p>
 
-                    有${pcount}個人和你一起記帳中
+                有${pcount}個人和你一起記帳中
         </div>
-
-
     </body>
 
     </html>

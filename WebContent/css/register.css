@@ -5,7 +5,9 @@
                 padding: 8% 0 0;
                 margin: auto;
             }
-            
+            li {
+            	color: #774557;
+            }
             h1 {
                 color: rgb(79, 117, 119);
             }

@@ -19,9 +19,8 @@
                     <h1>帳號啟用失敗</h1>
                 </f:otherwise>
             </f:choose>
-            <a href='/gossip'>回首頁</a>
+            <a href='/Accounting' style="text-decoration: none; color: #77AAAD;">回首頁</a>
         </div>
-
     </body>
 
     </html>

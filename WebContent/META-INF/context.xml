@@ -6,7 +6,7 @@
       username="caterpillar" 
       password="12345678"
       driverClassName="org.h2.Driver"
-      url="jdbc:h2:tcp://localhost//Users/chingyichen/Desktop/gossip"/>
+      url="jdbc:h2:tcp://localhost//YOUR_H2_DB_PATH"/>
 
     <Realm className="org.apache.catalina.realm.DataSourceRealm"
       localDataSource="true"
